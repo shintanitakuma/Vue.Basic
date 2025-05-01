@@ -1,10 +1,10 @@
-version: '3.8'
+version: '3'
 services:
   app:
-    build: .
-    container_name: vue-curriculum
-    ports:
-      - '8880:8880'
+    image: node:18
+    working_dir: /app
     volumes:
-      - ./app:/app
-    tty: true
+      - .:/app
+    ports:
+      - "8080:8080"
+    command: sh -c "npm install && npm run dev"
