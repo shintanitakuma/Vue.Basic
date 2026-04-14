@@ -1,0 +1,25 @@
+.p-location {
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.p-location__text {
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+.p-location__map {
+  margin-top: 50px;
+}
+
+.p-location__item {
+  width: 70%;
+  aspect-ratio: 3 / 2;
+}
+
+@media screen and (max-width: 795px) {
+  .p-location__item {
+    width: 100%;
+  }  
+}

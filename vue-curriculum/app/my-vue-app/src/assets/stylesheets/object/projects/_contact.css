@@ -1,0 +1,164 @@
+.p-contact {
+  padding: 0 40px;
+}
+
+.p-contact__content {
+  /* background: skyblue; */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  margin-bottom: 100px;
+}
+
+.p-contact__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.p-contact__input,
+.p-contact__item,
+.p-contact__details,
+.p-contact__button {
+  padding: 10px;
+  border: 1px solid;
+}
+
+.inputRed {
+  border: 1px solid #e74c3c;
+}
+
+.p-contact__select,
+.p-contact__input,
+.p-contact__details {
+  margin-top: 10px;
+}
+
+.p-contact__label:nth-child(n+2) {
+  margin-top: 20px;
+}
+
+.p-contact__companyText {
+  margin-top: 10px;
+  color: #e74c3c;
+}
+
+.p-contact__item {
+  appearance: none;
+  width: 50%;
+}
+
+.p-contact__input {
+  width: 90%;
+}
+
+.p-contact__details {
+  resize: none;
+  width: 100%;
+}
+
+.p-contact__label,
+.p-contact__item,
+.p-contact__input,
+.p-contact__details {
+  font-size: 20px;
+}
+
+.required {
+  background-color: #e74c3c;
+  color: white;
+  padding: 5px 15px;
+}
+
+.p-contact__select {
+  position: relative;
+}
+
+.p-contact__select::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #808080;
+}
+
+.p-contact__button {
+  border: none;
+  width: 50%;
+  cursor: pointer;
+  background-color: #e74c3c;
+  color: white;
+  padding: 10px;
+  margin: 50px auto 0;
+}
+
+.p-contact__button:hover {
+  background-color: #c0392b;
+}
+
+@media screen and (max-width: 1125px) {
+  .p-contact__select::after {
+    left: 50%;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #808080;
+  }
+}
+
+@media screen and (max-width: 796px) {
+  .p-contact__select::after {
+    left: 45%;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #808080;
+  }
+
+}
+
+@media screen and (max-width: 795px) {
+
+  .p-contact__label {
+    font-size: 25px;
+  }
+
+  .p-contact__button {
+    width: 100%;
+    margin: 40px 0;
+    font-size: 30px;
+  }
+
+}
+
+@media screen and (max-width: 375px) {
+  
+  .p-contact__label,
+  .p-contact__item,
+  .p-contact__input,
+  .p-contact__details,
+  .p-contact__companyText {
+    font-size: 10px;
+  }
+
+
+  .p-contact__button {
+    width: 100%;
+    margin: 40px 0;
+    font-size: 20px;
+  }
+
+  .p-contact__input,
+  .p-contact__item,
+  .p-contact__details,
+  .p-contact__button {
+    padding: 5px;
+  }
+
+  .p-contact__select::after {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #808080;
+  }
+
+}

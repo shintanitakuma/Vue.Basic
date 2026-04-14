@@ -1,0 +1,14 @@
+.l-footer {
+  border-top: 1px solid;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 30px 60px;
+  text-align: right;
+}
+
+.l-footer__text {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 795px) {
+}

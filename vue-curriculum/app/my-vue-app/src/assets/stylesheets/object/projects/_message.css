@@ -1,0 +1,124 @@
+.p-message {
+  padding: 0 20px;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1500px;
+  margin-top: 50px;
+}
+
+.p-message__title {
+  font-size: 120px;
+  font-weight: bold;
+  line-height: 1.1;
+  margin-right: 50px;
+  margin-top: 100px;
+}
+
+.p-message__heading {
+  margin-bottom: 20px;
+  color: darkgoldenrod;
+}
+
+.p-message__middle {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.p-message__subText {
+  font-size: 60px;
+  font-family: "Lucida Handwriting", cursive;
+  color: #D28D8D;
+  text-align: right;
+  padding-right: 50px;
+}
+
+.p-message__primary {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.p-message__space {
+  display: none;
+}
+
+@media screen and (max-width: 1126px) {
+  .p-message__space {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1125px) {
+  .p-message__title {
+    display: none;
+  }
+
+  .p-message__space {
+    display: none;
+  }
+
+  .p-message__content {
+    width: 93%;
+  }
+
+  .p-message__heading {
+    font-size: 20px;
+  }
+
+  .p-message__middle {
+    font-size: 30px;
+  }
+
+  .p-message__primary {
+    font-size: 16px;
+  }
+
+}
+
+@media screen and (max-width: 796px) {
+  .p-message__heading {
+    font-size: 20px;
+  }
+
+  .p-message__middle {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 795px) {
+  .p-message__heading {
+    font-size: 26px;
+  }
+
+  .p-message__middle {
+    font-size: 42px;
+  }
+
+  .p-message__subText {
+    font-size: 50px;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .p-message__heading {
+    font-size: 12px;
+  }
+
+  .p-message__middle {
+    font-size: 19px;
+  }
+
+  .p-message__subText {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .p-message__heading {
+    font-size: 10px;
+  }
+
+  .p-message__middle {
+    font-size: 16px;
+  }
+}
